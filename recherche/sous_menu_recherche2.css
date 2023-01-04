@@ -1,0 +1,22 @@
+main{
+    color:#9D4EDD;
+}
+
+main p{
+    margin: 10px;
+}
+hr{
+    background-color:#9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+.chambre_connectee, .environnement_connectee{
+    display: flex;
+    margin: 10px;
+}
+
+.texte h2{
+    text-align: center;
+    text-decoration: underline;
+}
