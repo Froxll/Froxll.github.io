@@ -1,0 +1,19 @@
+main{
+    color:#9D4EDD;
+}
+
+hr{
+    background-color:#9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    margin: 10px;
+}
+
