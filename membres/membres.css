@@ -1,0 +1,102 @@
+hr{
+    background-color:#9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+#titre{
+    text-align: center;
+    color:#9D4EDD;
+    text-decoration: underline;
+}
+
+.enseignants_chercheurs{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.nom{
+    display: flex;
+    flex-direction: column;
+    background-color: #9D4EDD;
+    border-radius: 25px;
+    color:white;
+    padding: 15px;
+    height: 400px;
+    width: 240px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+    border: 3px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.icone{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icone:hover{
+    cursor: pointer;
+}
+
+main img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.mots_clefs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mots_clefs p{
+    background-color: white;
+    color: #9D4EDD;
+    border-radius: 3px;
+    font-size: small;
+    margin: 4px;
+}
+
+.nom:hover{
+    background-color: white;
+    border: 3px;
+    border-color: #9D4EDD;
+    border-style: solid;
+}
+
+.nom:hover > h3, .nom:hover > p{
+    color:#9D4EDD;
+}
+
+.ayoub_karine:hover > .mots_clefs p, .maher_jridi:hover > .mots_clefs p{
+    background-color:#9D4EDD;
+    color: white;
+}
+
+.ayoub_karine:hover > .icone, .maher_jridi:hover > .icone{
+    color:#9D4EDD;
+}
+
+.test{
+    display:flex;
+    justify-content: space-around;
+}
+
+.test1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sylvain_lefebvre, .salima_bourbia, .djamel_benarab{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+}
