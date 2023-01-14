@@ -1,103 +1,103 @@
 .deplacement{
-    display: grid;
-    grid-template-rows: 50px 50% 50px 50% 50px;
-    grid-template-columns: 25px 25% 25px 25% 25px 40% 25px;
+  display: grid;
+  grid-template-rows: 50px 50% 50px 50% 50px;
+  grid-template-columns: 25px 25% 25px 25% 25px 40% 25px;
 }
 
 .ville{
-    height: 250px;
-    width: 250px;
-    border-style: solid;
-    border-color: #9D4EDD;
-    border-width: 5px;
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  border-color: #9D4EDD;
+  border-width: 4px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .icone{
-    color: #9D4EDD;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    margin-top: 10px;
-    background: #ffffff;
-    box-shadow: 5px 5px 8px #ebebeb,
-                -5px -5px 8px #ffffff;
+  color: #9D4EDD;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-top: 10px;
+  background: #ffffff;
+  box-shadow: 5px 5px 8px #ebebeb,
+              -5px -5px 8px #ffffff;
 }
 
 .icone:hover{
-    background: #ffffff;
-    box-shadow: inset 5px 5px 8px #ebebeb,
-                inset -5px -5px 8px #ffffff;
-    cursor: pointer;
+  background: #ffffff;
+  box-shadow: inset 5px 5px 8px #ebebeb,
+              inset -5px -5px 8px #ffffff;
+  cursor: pointer;
 }
 
 .icone:hover > i{
-    transform: scale(0.95);
-    transition-duration: 0.2s;
+  transform: scale(0.95);
+  transition-duration: 0.2s;
 }
 
 .icone i{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .nantes{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .rennes{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 .brest{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .caen{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 4;
-    grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 iframe{
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 5;
-    grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 6;
 }
 
 hr{
-    width: 5px;
-    height: 100%;
-    background-color: #9D4EDD;
-    border:none;
-    border-radius: 5px;
+  width: 5px;
+  height: 100%;
+  background-color: #9D4EDD;
+  border:none;
+  border-radius: 5px;
+  
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
 
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 4;
-    grid-column-end: 5;
-
-    margin-right: 55px;
+  margin-right: 55px;
 }
 
 .ville h3{
-    position: absolute;
-    margin-top: 7.2%;
-    color: #9D4EDD;
+  position: absolute;
+  margin-top: 7.2%;
+  color: #9D4EDD;
 }
   
 .lien_popup {
@@ -147,17 +147,17 @@ hr{
 }
 
 .popup h2{
-    color: #9D4EDD;
+  color: #9D4EDD;
 }
 
 .itineraire{
-    color:black;
+  color:black;
 }
 
 .button{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 700px){

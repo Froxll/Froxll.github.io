@@ -83,7 +83,7 @@ footer{
     color: white;
     display:grid;
     grid-template-rows:70px;
-    grid-template-columns:70% 15% 15%;
+    grid-template-columns:60% 20% 20%;
 }
 
 body{
@@ -103,8 +103,6 @@ footer p{
 #developpeur i:hover{
     cursor: pointer;
 }
-
-
 
 #linkedin{
     color: white;
