@@ -21,3 +21,12 @@ hr{
     text-decoration: underline;
 }
 
+.environnement img{
+    height: 100%;
+    width: 100%;
+}
+
+.chambre img{
+    height: 293%;
+    width: 293%;
+}

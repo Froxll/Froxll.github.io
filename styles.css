@@ -120,3 +120,52 @@ footer p{
     display: block;
 }
 
+.menu-hamburger{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: none;
+}
+
+@media screen and (max-width: 1350px){
+    .navbar{
+        padding: 0;
+    }
+    .menu-hamburger{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background-color:#9D4EDD;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 300px;
+    }
+    .navbar .nav-links ul li{
+        margin: 0;
+        padding: 0;
+    }
+    .logo_labisen{
+        display: none;
+    }
+    #test{
+        padding-top: 110px;
+    }
+}

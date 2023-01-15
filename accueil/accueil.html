@@ -21,66 +21,71 @@
 </head>
 <body>
     <header>
-        <ul>
-            <a href="https://isen-brest.fr/labisen/" target="_blank">
-                <img src="../images/LabISEN.png" alt="Image Not Found" weight="120px" height="60">
-            </a>
-            <li>
-                <a href="accueil.html">
-                    <i class="material-symbols-outlined">home</i> Accueil
-                </a>
-            </li>
-            <li class="deroulant">
-                <a href="#">
-                    <i class="material-symbols-outlined">search</i> Recherche
-                </a>
-                <ul class="sous_recherche">
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <a href="https://isen-brest.fr/labisen/" target="_blank">
+                        <img src="../images/LabISEN.png" alt="Image Not Found"  class="logo_labisen" weight="120px" height="60">
+                    </a>
                     <li>
-                        <a href="../recherche/sous_menu_recherche1.html" target="_blank">Thématiques de recherche</a>
+                        <a href="accueil.html">
+                            <i class="material-symbols-outlined">home</i> Accueil
+                        </a>
+                    </li>
+                    <li class="deroulant contact">
+                        <a href="#">
+                            <i class="material-symbols-outlined">search</i> Recherche
+                        </a>
+                        <ul class="sous_recherche">
+                            <li>
+                                <a href="../recherche/sous_menu_recherche1.html" target="_blank">Thématiques de recherche</a>
+                            </li>
+                            <li>
+                                <a href="../recherche/sous_menu_recherche2.html" target="_blank">Plateformes technologiques</a>
+                            </li>   
+                        </ul>
+                    </li>
+                    <li id="test">
+                        <a href="../membres/membres.html">
+                            <i class="material-symbols-outlined">groups</i>  Membres
+                        </a>
                     </li>
                     <li>
-                        <a href="../recherche/sous_menu_recherche2.html" target="_blank">Plateformes technologiques</a>
-                    </li>   
-                </ul>
-            </li>
-            <li>
-                <a href="../membres/membres.html">
-                    <i class="material-symbols-outlined">groups</i>  Membres
-                </a>
-            </li>
-            <li>
-                <a href="../projets/projets.html">
-                    <i class="material-symbols-outlined">science</i> Projets
-                </a>
-            </li>
-            <li>
-                <a href="../publications/publications.html">
-                    <i class="material-symbols-outlined">description</i> Publications
-                </a>
-            </li>
-            <li>
-                <a href="../partenaires/partenaires.html">
-                    <i class="material-symbols-outlined">handshake</i> Partenaires
-                </a>
-            </li>
-            <li class="deroulant">
-                <a href="#">
-                    <i class="material-symbols-outlined">help</i> Infos et contact
-                </a>
-                <ul class="sous_info">
-                    <li>
-                        <a href="../infos_et_contact/sous_menu_1.html" target="_blank">Contactez-nous</a>
+                        <a href="../projets/projets.html">
+                            <i class="material-symbols-outlined">science</i> Projets
+                        </a>
                     </li>
                     <li>
-                        <a href="../infos_et_contact/sous_menu_2.html" target="_blank">Plan d'accès</a>
+                        <a href="../publications/publications.html">
+                            <i class="material-symbols-outlined">description</i> Publications
+                        </a>
                     </li>
                     <li>
-                        <a href="../infos_et_contact/sous_menu_3.html" target="_blank">Offres d'emploi</a>
-                    </li>     
-                </ul>
-            </li>
+                        <a href="../partenaires/partenaires.html">
+                            <i class="material-symbols-outlined">handshake</i> Partenaires
+                        </a>
+                    </li>
+                    <li class="deroulant infos">
+                        <a href="#">
+                            <i class="material-symbols-outlined">help</i> Infos et contact
+                        </a>
+                        <ul class="sous_info">
+                            <li>
+                                <a href="../infos_et_contact/sous_menu_1.html" target="_blank">Contactez-nous</a>
+                            </li>
+                            <li>
+                                <a href="../infos_et_contact/sous_menu_2.html" target="_blank">Plan d'accès</a>
+                            </li>
+                            <li>
+                                <a href="../infos_et_contact/sous_menu_3.html" target="_blank">Offres d'emploi</a>
+                            </li>     
+                        </ul>
+                    </li>
 
-        </ul>
+                </ul>
+            </div>
+            <img src="../images/menu_burger.png" alt="Error While Loading Image" class="menu-hamburger">
+        </nav>
     </header>
 
     <main>
@@ -215,4 +220,12 @@
         </div>
     </footer>
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 </html>
