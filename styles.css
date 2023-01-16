@@ -171,11 +171,11 @@ footer p{
     .sous_info li{
         display: none;
     }
-    .contact a:active ~ .sous_recherche li{
+    .contact a:hover ~ .sous_recherche li{
         display: block;
         margin-left: 150px;
     }
-    .infos a:active ~ .sous_info li{
+    .infos a:hover ~ .sous_info li{
         display: block;
         margin-left: 150px;
     }
