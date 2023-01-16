@@ -156,7 +156,6 @@ footer p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 300px;
     }
     .navbar .nav-links ul li{
         margin: 0;
@@ -171,13 +170,21 @@ footer p{
     .sous_info li{
         display: none;
     }
-    .contact a:hover ~ .sous_recherche li{
+    .navbar .nav-links ul li:hover .sous_info li{
         display: block;
-        margin-left: 150px;
     }
-    .infos a:hover ~ .sous_info li{
+    .navbar .nav-links ul li:hover .sous_recherche li{
         display: block;
-        margin-left: 150px;
+    }
+    .sous_recherche{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+    .sous_info{
+        display: block;
+        position: absolute;
+        z-index: 1;
     }
 }
 
