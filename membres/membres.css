@@ -12,8 +12,7 @@ hr{
 
 .enseignants_chercheurs{
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    justify-content: space-evenly;
 }
 
 .nom{
@@ -99,4 +98,73 @@ main img{
     justify-content: center;
     height: 300px;
     box-shadow: 0 10px 20px grey, 0 6px 6px white;
+}
+
+@media screen and (max-width: 600px){
+    .nom{
+        height: 300px;
+        width: 210px;
+    }
+    .nom img{
+        height: 50px;
+        width: 50px;
+    }
+    .nom h3{
+        font-size: 0.8em;
+    }
+    .nom p{
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .nom{
+        height: 330px;
+        width: 157.5px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .sylvain_lefebvre, .djamel_benarab, .salima_bourbia{
+        height: 250px;
+        width: 206px;
+    }
+    .sylvain_lefebvre h3, .djamel_benarab h3, .salima_bourbia h3{
+        font-size: 1em;
+    }
+    .sylvain_lefebvre p, .djamel_benarab p, .salima_bourbia p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .sylvain_lefebvre, .djamel_benarab, .salima_bourbia{
+        height: 125px;
+        width: 103px;
+    }
+    .sylvain_lefebvre h3, .djamel_benarab h3, .salima_bourbia h3{
+        font-size: 0.6em;
+    }
+    .sylvain_lefebvre p, .djamel_benarab p, .salima_bourbia p{
+        font-size: 0.5em;
+    }
+    #titre{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sylvain_lefebvre, .djamel_benarab, .salima_bourbia{
+        height: 62.5px;
+        width: 51.5px;
+    }
+    .sylvain_lefebvre h3, .djamel_benarab h3, .salima_bourbia h3{
+        font-size: 0.3em;
+    }
+    .sylvain_lefebvre p, .djamel_benarab p, .salima_bourbia p{
+        font-size: 0.30em;
+    }
+    #titre{
+        font-size: 0.5em;
+    }
 }

@@ -98,13 +98,21 @@ h1{
 
 @media screen and (max-width: 830px){
     .description div{
-        font-size: 0.7em;
+        font-size: 0.5em;
+        height: 100px;
+        width: 175px;
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 620px){
     .description div{
-        font-size: 0.55em;
+        font-size: 0.35em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .description div{
+        font-size: 0.25em;
     }
 }
 

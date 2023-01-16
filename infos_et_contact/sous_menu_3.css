@@ -75,3 +75,22 @@ hr{
     border: none;
 }
 
+@media screen and (max-width: 1200px){
+    .carte{
+        height: 200px;
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .carte{
+        height: 100px;
+        width: 87.5px;
+    }
+    .carte:hover > .arriere{
+        font-size: 0.4em;
+    }
+    .avant{
+        font-size: 0.5em;
+    }
+}
