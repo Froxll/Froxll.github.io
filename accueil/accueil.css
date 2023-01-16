@@ -22,6 +22,7 @@ div.description{
     height: 200px;
     width: 350px;
     box-shadow: 0 10px 20px grey, 0 6px 6px white;
+    font-size: 1.2em;
 }
 
 main hr{
@@ -87,4 +88,42 @@ h3 a{
 
 h1{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1140px){
+    .description div{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .description div{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .description div{
+        font-size: 0.55em;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .carte{
+        height: 200px;
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .carte{
+        height: 100px;
+        width: 87.5px;
+    }
+    .carte:hover > .arriere{
+        font-size: 0.5em;
+    }
+    .avant{
+        font-size: 0.5em;
+    }
 }

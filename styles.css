@@ -165,7 +165,18 @@ footer p{
     .logo_labisen{
         display: none;
     }
-    #test{
-        padding-top: 110px;
+    .sous_recherche li{
+        display: none;
+    }
+    .sous_info li{
+        display: none;
+    }
+    .contact a:active ~ .sous_recherche li{
+        display: block;
+        margin-left: 150px;
+    }
+    .infos a:active ~ .sous_info li{
+        display: block;
+        margin-left: 150px;
     }
 }
