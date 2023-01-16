@@ -22,11 +22,27 @@ hr{
 }
 
 .environnement img{
-    height: 100%;
-    width: 100%;
+    height: 400px;
+    width: 700px;
 }
 
 .chambre img{
-    height: 293%;
-    width: 293%;
+    height: 400px;
+    width: 700px;
+}
+
+@media screen and (max-width: 600px){
+    .images img{
+        height: 100px;
+        width: 175px;
+    }
+    .texte h1{
+        font-size: 0.6em;
+    }
+    .texte p{
+        font-size: 0.3em;
+    }
+    main h3{
+        font-size: 0.5em;
+    }
 }

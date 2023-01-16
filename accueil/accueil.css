@@ -79,7 +79,7 @@ main hr{
 }
 
 .avant{
-    position: absolute;
+    position:fixed;
 }
 
 h3 a{
@@ -133,11 +133,5 @@ h1{
     }
     .avant{
         font-size: 0.5em;
-    }
-}
-
-@media screen and (max-width: 1350px){
-    .fil_actualite{
-        display: none;
     }
 }
