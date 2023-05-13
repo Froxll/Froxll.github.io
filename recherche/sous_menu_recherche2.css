@@ -1,0 +1,48 @@
+main{
+    color:#9D4EDD;
+}
+
+main h3, main p{
+    margin: 25px;
+}
+hr{
+    background-color:#9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+.images{
+    display: flex;
+    margin: 25px;
+}
+
+.texte h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.environnement img{
+    height: 400px;
+    width: 700px;
+}
+
+.chambre img{
+    height: 400px;
+    width: 700px;
+}
+
+@media screen and (max-width: 600px){
+    .images img{
+        height: 100px;
+        width: 175px;
+    }
+    .texte h1{
+        font-size: 0.6em;
+    }
+    .texte p{
+        font-size: 0.3em;
+    }
+    main h3{
+        font-size: 0.5em;
+    }
+}

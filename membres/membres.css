@@ -1,0 +1,170 @@
+hr{
+    background-color:#9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+#titre{
+    text-align: center;
+    color:#9D4EDD;
+    text-decoration: underline;
+}
+
+.enseignants_chercheurs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nom{
+    display: flex;
+    flex-direction: column;
+    background-color: #9D4EDD;
+    border-radius: 25px;
+    color:white;
+    padding: 15px;
+    height: 400px;
+    width: 240px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+    border: 3px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.icone{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icone:hover{
+    cursor: pointer;
+}
+
+main img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.mots_clefs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mots_clefs p{
+    background-color: white;
+    color: #9D4EDD;
+    border-radius: 3px;
+    font-size: small;
+    margin: 4px;
+}
+
+.nom:hover{
+    background-color: white;
+    border: 3px;
+    border-color: #9D4EDD;
+    border-style: solid;
+}
+
+.nom:hover > h3, .nom:hover > p{
+    color:#9D4EDD;
+}
+
+.ayoub_karine:hover > .mots_clefs p, .maher_jridi:hover > .mots_clefs p{
+    background-color:#9D4EDD;
+    color: white;
+}
+
+.ayoub_karine:hover > .icone, .maher_jridi:hover > .icone{
+    color:#9D4EDD;
+}
+
+.test{
+    display:flex;
+    justify-content: space-around;
+}
+
+.test1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sylvain_lefebvre, .salima_bourbia, .djamel_benarab{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+}
+
+@media screen and (max-width: 600px){
+    .nom{
+        height: 300px;
+        width: 210px;
+    }
+    .nom img{
+        height: 50px;
+        width: 50px;
+    }
+    .nom h3{
+        font-size: 0.8em;
+    }
+    .nom p{
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .nom{
+        height: 330px;
+        width: 157.5px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .sylvain_lefebvre, .djamel_benarab, .salima_bourbia{
+        height: 250px;
+        width: 206px;
+    }
+    .sylvain_lefebvre h3, .djamel_benarab h3, .salima_bourbia h3{
+        font-size: 1em;
+    }
+    .sylvain_lefebvre p, .djamel_benarab p, .salima_bourbia p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .sylvain_lefebvre, .djamel_benarab, .salima_bourbia{
+        height: 125px;
+        width: 103px;
+    }
+    .sylvain_lefebvre h3, .djamel_benarab h3, .salima_bourbia h3{
+        font-size: 0.6em;
+    }
+    .sylvain_lefebvre p, .djamel_benarab p, .salima_bourbia p{
+        font-size: 0.5em;
+    }
+    #titre{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sylvain_lefebvre, .djamel_benarab, .salima_bourbia{
+        height: 62.5px;
+        width: 51.5px;
+    }
+    .sylvain_lefebvre h3, .djamel_benarab h3, .salima_bourbia h3{
+        font-size: 0.3em;
+    }
+    .sylvain_lefebvre p, .djamel_benarab p, .salima_bourbia p{
+        font-size: 0.30em;
+    }
+    #titre{
+        font-size: 0.5em;
+    }
+}

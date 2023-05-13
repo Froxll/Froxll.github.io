@@ -1,0 +1,91 @@
+main{
+    color:#9D4EDD;
+}
+
+hr{
+    background-color:#9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+}
+
+p{
+    margin: 20px;
+}
+
+.images{
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    gap: 50px;
+    border-color: #9D4EDD;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 15px;
+}
+
+.images img{
+    width: 350px;
+    height: 200px;
+}
+
+.drone_sous_marin, .castel, .drone, .seas{
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 1000px){
+    .texte p{
+        font-size: 0.7em;
+    }
+    .texte h2{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .images img{
+        width: 175px;
+        height: 100px;
+    }
+    .texte p{
+        font-size: 0.5em;
+    }
+    .texte h2{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .images img{
+        width: 131px;
+        height: 75px;
+    }
+    .texte p{
+        font-size: 0.4em;
+    }
+    .texte h2{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .images img{
+        width: 65px;
+        height:37px;
+    }
+    .texte p{
+        font-size: 0.3em;
+    }
+    .texte h2{
+        font-size: 0.5em;
+    }
+}

@@ -1,0 +1,224 @@
+.deplacement{
+  display: grid;
+  grid-template-rows: 50px 50% 50px 50% 50px;
+  grid-template-columns: 25px 25% 25px 25% 25px 40% 25px;
+}
+
+.ville{
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  border-color: #9D4EDD;
+  border-width: 4px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.icone{
+  color: #9D4EDD;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-top: 10px;
+  background: #ffffff;
+  box-shadow: 5px 5px 8px #ebebeb,
+              -5px -5px 8px #ffffff;
+}
+
+.icone:hover{
+  background: #ffffff;
+  box-shadow: inset 5px 5px 8px #ebebeb,
+              inset -5px -5px 8px #ffffff;
+  cursor: pointer;
+}
+
+.icone:hover > i{
+  transform: scale(0.95);
+  transition-duration: 0.2s;
+}
+
+.icone i{
+  margin-top: 30px;
+}
+
+.nantes{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.rennes{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.brest{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.caen{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+iframe{
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+hr{
+  width: 5px;
+  height: 100%;
+  background-color: #9D4EDD;
+  border:none;
+  border-radius: 5px;
+  
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  margin-right: 55px;
+}
+
+.ville h3{
+  position: absolute;
+  margin-top: 7.2%;
+  color: #9D4EDD;
+}
+  
+.lien_popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.lien_popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  width: 30%;
+  position: relative;
+}
+
+.popup .fermeture {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color:black;
+}
+
+.lien_popup .fermeture:hover {
+  color:#9D4EDD;
+  cursor: pointer;
+}
+
+.lien_popup .itineraire {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.popup h2{
+  color: #9D4EDD;
+}
+
+.itineraire{
+  color:black;
+}
+
+.button{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .ville{
+    width: 125px;
+    height: 125px;
+  }
+  .icone{
+    width: 50px;
+    height: 50px;
+  }
+  .ville h3{
+    display: none;
+  }
+  .fa-solid{
+    font-size: 1em;
+  }
+  hr{
+    display: none;
+  }
+  iframe{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .ville{
+    width: 62.5px;
+    height: 62.5px;
+  }
+  .icone{
+    width: 25px;
+    height: 25px;
+  }
+  .ville h3{
+    display: none;
+  }
+  .fa-solid{
+    font-size: 1em;
+  }
+  hr{
+    display: none;
+  }
+  iframe{
+    height: 300px;
+    width: 120px;
+  }
+  .icone i{
+    margin: 0;
+  }
+  .ville h3{
+    margin: 0;
+  }
+}

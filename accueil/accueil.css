@@ -1,0 +1,174 @@
+main{
+    color: #9D4EDD;
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+}
+
+div.description{
+    display: flex;
+    justify-content: center;
+}
+
+.description div{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    background-color: #9D4EDD;
+    color: white;
+    border-radius: 25px;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+    font-size: 1.2em;
+}
+
+main hr{
+    background-color: #9D4EDD;
+    height: 1px;
+    border: none;
+}
+
+.competences img{
+    display: flex;
+    text-align: center;
+    margin:auto;
+}
+
+.fil_actualite{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartes{
+    perspective: 1000px;
+}
+
+.carte{
+    background-color: #9D4EDD;
+    color: white;
+    border-radius: 25px;
+    height: 200px;
+    width: 350px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+}
+
+.avant, .arriere{
+    backface-visibility: hidden;
+}
+
+.arriere{
+    transform: rotateY(180deg);
+    margin: 10px;
+    text-align: center;
+}
+
+.cartes:hover .carte{
+    transform: rotateY(-180deg);
+}
+
+.carte:hover > .avant{
+    visibility: hidden;
+}
+
+.avant{
+    position:fixed;
+}
+
+h3 a{
+    cursor: pointer;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.boutton1{
+    display: flex;
+    justify-content: center;
+}
+
+.boutton{
+    width: 250px;
+    height: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #9D4EDD;
+    border-radius: 6px;
+    color: #9D4EDD;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.boutton:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1140px){
+    .description div{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .description div{
+        font-size: 0.5em;
+        height: 100px;
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .description div{
+        font-size: 0.35em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .description div{
+        font-size: 0.25em;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .carte{
+        height: 200px;
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .boutton{
+        padding-top: 2px;
+        padding-bottom: 4px;
+        width: 150px;
+        height: 8px;
+        font-size: 0.6em;
+    }
+    .carte{
+        height: 100px;
+        width: 87.5px;
+    }
+    .carte:hover > .arriere{
+        font-size: 0.5em;
+    }
+    .avant{
+        font-size: 0.5em;
+    }
+}
+
+#clock, #chrono{
+    font-size: 1.2em;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+}

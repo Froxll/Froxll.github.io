@@ -1,0 +1,211 @@
+
+
+html, body, main, ul{
+    margin : 0px;
+    min-height: 100%;
+}
+
+a{
+    all:unset;
+}
+
+header{
+    background-color: #9D4EDD;
+    height: 70px;
+}
+
+header ul{
+    list-style : none;
+    display : flex;
+    justify-content : center;
+    gap : 15px;
+}
+
+header li{
+    position: relative;
+}
+
+header ul li{
+    padding: 20px 10px 15px 10px;
+    color : white;
+    font-size : 18px;
+}
+
+header ul img{
+    position: absolute;
+    left: 110px;
+    top:5px;
+}
+
+header ul img:hover, header ul li a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #C77DFF;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+header ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 3px 3px 3px 3px;
+}
+
+header ul li:hover .sous_info, header ul li:hover .sous_recherche{
+    display:block;
+}
+
+.sous_recherche{
+    display:none;
+    position:absolute;
+    padding: 0;
+    background-color: #9D4EDD;
+    border-radius: 10px;
+    margin: 10px 0px 0px -10px;
+}
+
+.sous_info{
+    display:none;
+    position:absolute;
+    padding: 0;
+    background-color: #9D4EDD;
+    border-radius: 10px;
+    margin: 10px 0px 0px 5px;
+}
+
+footer{
+    background-color:#9D4EDD;
+    position: sticky;
+    top:100%;
+    width: 100%;
+    height: 70px;
+    color: white;
+    display:grid;
+    grid-template-rows:70px;
+    grid-template-columns:40% 30% 30%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+footer p{
+    margin-left: 10px;
+}
+
+#developpeur{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+
+#developpeur i:hover{
+    cursor: pointer;
+}
+
+#linkedin{
+    color: white;
+    background-color: #9D4EDD;
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    margin: 0;
+    padding: 2px;
+    display: none;
+    border-radius: 5px;
+}
+
+#developpeur a:hover ~ p{
+    display: block;
+}
+
+.menu-hamburger{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: none;
+}
+
+@media screen and (max-width: 1350px){
+    .navbar{
+        padding: 0;
+    }
+    .menu-hamburger{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background-color:#9D4EDD;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+        margin: 0;
+        padding: 0;
+    }
+    .logo_labisen{
+        display: none;
+    }
+    .sous_recherche li{
+        display: none;
+    }
+    .sous_info li{
+        display: none;
+    }
+    .navbar .nav-links ul li:hover .sous_info li{
+        display: block;
+    }
+    .navbar .nav-links ul li:hover .sous_recherche li{
+        display: block;
+    }
+    .sous_recherche{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+    .sous_info{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .fa-linkedin{
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer p{
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .fa-linkedin{
+        font-size: 1.8em;
+    }
+}
