@@ -15,7 +15,7 @@ function clock() {
     
 }
 
-setInterval(clock, 1000)
+//setInterval(clock, 1000)
 
 function chrono(){
 
@@ -32,12 +32,14 @@ function chrono(){
         setInterval(()=>{
             let time = new Date()
     
-        let hours = time.getHours()
-        let minutes = time.getMinutes()
-        let seconds = time.getSeconds()
-        console.log("heure actualle :",seconds)
+            time = new Date(time - actual_time)
+            let hours = time.getHours()
+            let minutes = time.getMinutes()
+            let seconds = time.getSeconds()
+            
+            clock()
 
-        document.getElementById("chrono").innerHTML = inf10(hours-actual_hours) + ":" + inf10(minutes-actual_minutes) + ":" + inf10(seconds-actual_seconds) 
+            document.getElementById("chrono").innerHTML = inf10(hours-1) + ":" + inf10(minutes) + ":" + inf10(seconds) 
 
         },1000)
 
@@ -48,9 +50,6 @@ function chrono(){
 
 
 function inf10(time) {
-
-    
-
     if (time < 10) {
         time = '0' + time
     }
