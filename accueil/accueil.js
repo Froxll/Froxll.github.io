@@ -15,19 +15,11 @@ function clock() {
     
 }
 
-//setInterval(clock, 1000)
-
 function chrono(){
 
     window.onload = (event) => {
         
         let actual_time = new Date()
-
-        let actual_hours = actual_time.getHours()
-        let actual_minutes = actual_time.getMinutes()
-        let actual_seconds = actual_time.getSeconds()
-
-        console.log("heure au chargement : ",actual_seconds)
 
         setInterval(()=>{
             let time = new Date()
