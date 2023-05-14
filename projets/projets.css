@@ -89,3 +89,12 @@ p{
         font-size: 0.5em;
     }
 }
+
+.fa-arrow-up{
+    margin-left: 96vw;
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
