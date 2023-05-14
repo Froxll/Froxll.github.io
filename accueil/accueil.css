@@ -35,6 +35,7 @@ main hr{
     display: flex;
     text-align: center;
     margin:auto;
+    cursor: pointer;
 }
 
 .fil_actualite{

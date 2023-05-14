@@ -48,6 +48,30 @@ function inf10(time) {
     return time;
 }
 
+let counter = 0;
+
+function survol_competence(){
+
+    document.getElementById("schema").addEventListener("click",function() {
+        
+        if(counter%2==0){
+            let schema = document.getElementById("schema")
+    
+            schema.style.width = '100%'
+            schema.style.height = '100%'
+        }
+        else{
+            let schema = document.getElementById("schema")
+    
+            schema.style.width = '70%'
+            schema.style.height = '70%'
+        }
+    
+        counter+=1
+
+    })
+
+}
 
 
 main();
