@@ -2,6 +2,9 @@ function main(){
 
     chrono()
 
+    WhoAreWe()
+    setInterval(WhoAreWe, 15000)
+    
 }
 
 function clock() {
@@ -16,9 +19,6 @@ function clock() {
 }
 
 function chrono(){
-
-    window.onload = (event) => {
-        
         let actual_time = new Date()
 
         setInterval(()=>{
@@ -34,9 +34,6 @@ function chrono(){
             document.getElementById("chrono").innerHTML = inf10(hours-1) + ":" + inf10(minutes) + ":" + inf10(seconds) 
 
         },1000)
-
-    }
-
 }
 
 
@@ -48,6 +45,58 @@ function inf10(time) {
     return time;
 }
 
+let counter = 0;
+
+function survol_competence(){
+
+    document.getElementById("schema").addEventListener("click",function() {
+        
+        if(counter%2==0){
+            let schema = document.getElementById("schema")
+    
+            schema.style.width = '100%'
+            schema.style.height = '100%'
+        }
+        else{
+            let schema = document.getElementById("schema")
+    
+            schema.style.width = '70%'
+            schema.style.height = '70%'
+        }
+    
+        counter+=1
+
+    })
+
+}
+
+function WhoAreWe(){
+        
+    document.getElementById("WhoAreWe").innerHTML += "Qui"
+
+    setTimeout(function() {
+        document.getElementById("WhoAreWe").innerHTML += " sommes"
+    },1000)
+
+    setTimeout(function() {
+        document.getElementById("WhoAreWe").innerHTML += "-nous ?"
+    },2000)
+
+    setTimeout(function() {
+        document.getElementById("WhoAreWe").style.marginLeft = "89.4vw"
+    },3000)
+
+    setTimeout(function() {
+        document.getElementById("WhoAreWe").style.marginLeft = "0"
+    },8000)
+
+    setTimeout(function() {
+        document.getElementById("WhoAreWe").innerHTML = ""
+    },14000)
+
+}
 
 
-main();
+window.onload = () => {
+    main();
+}

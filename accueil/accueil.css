@@ -35,6 +35,7 @@ main hr{
     display: flex;
     text-align: center;
     margin:auto;
+    cursor: pointer;
 }
 
 .fil_actualite{
@@ -171,4 +172,10 @@ h1{
     color: white;
     margin-top: 25px;
     margin-left: 25px;
+}
+
+#WhoAreWe{
+    margin-left: 0px;
+    transition: all 5s;
+    font-size: 1.5em;
 }
