@@ -98,3 +98,15 @@ p{
 html{
     scroll-behavior: smooth;
 }
+
+#pictures_drone,#pictures_drone_2,#pictures_submarine,#pictures_submarine_2,#pictures_seas,#pictures_seas_2,#pictures_castel,#pictures_castel_2{
+    cursor: pointer;
+}
+
+#pictures_drone,#pictures_submarine,#pictures_seas,#pictures_castel{
+    display: block;
+}
+
+#pictures_drone_2,#pictures_submarine_2,#pictures_seas_2,#pictures_castel_2{
+    display: none;
+}
