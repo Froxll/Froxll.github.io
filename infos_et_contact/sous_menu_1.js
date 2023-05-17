@@ -60,6 +60,33 @@ function checkCommentary(){
 
 }
 
+function errorMessage(){
+
+    if(checkName() == true){
+        document.getElementById("survol_prenom").style.display = "none"
+    }
+    if(checkName() == false){
+        document.getElementById("survol_prenom").style.display = "block"
+    }
+    if(checkMail() == true){
+        document.getElementById("survol_email").style.display = "none"
+    }
+    if(checkMail() == false){
+        document.getElementById("survol_email").style.display = "block"
+    }
+    if(checkCommentary() == true){
+        document.getElementById("survol_commentaire").style.display = "none"
+    }
+    if(checkCommentary() == false){
+        document.getElementById("survol_commentaire").style.display = "block"
+    }
+
+}
+
+function startGame(){
+    console.log("a completer")
+}
+
 window.onload = () => {
     main();
 }
