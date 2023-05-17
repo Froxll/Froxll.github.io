@@ -99,14 +99,16 @@
                 <div class="gauche">
                         <div class="groupe">
                             <label>Votre Prénom</label>
-                            <input type="text" id="name" oninput="checkName()">
+                            <input type="text" id="name" oninput="checkName();errorMessage()">
                             <i class="fa-solid fa-user"></i>
+                            <p id="survol_prenom">Veuillez rentrer un prénom valide.</p>
                          </div>
 
                         <div class="groupe">
                             <label>Adresse e-mail</label>
-                            <input type="email" id="email" oninput="checkMail()">
+                            <input type="email" id="email" oninput="checkMail();errorMessage()">
                             <i class="fa-solid fa-envelope"></i>
+                            <p id="survol_email">Veuillez rentrer un e-mail valide.</p>
                         </div>
 
                         <div class="groupe">
@@ -119,13 +121,14 @@
                 <div class="droite">
                     <div class="groupe">
                         <label>Commentaire</label>
-                        <textarea placeholder="Saisissez votre commentaire ..." id="commentary" oninput="checkCommentary()"></textarea>
+                        <textarea placeholder="Saisissez votre commentaire ..." id="commentary" oninput="checkCommentary();errorMessage()"></textarea>
+                        <p id="survol_commentaire">Veuillez écrire au moins 20 caractères.</p>
                     </div>
                 </div>
             </div>
 
             <div class="pied-formulaire">
-                <button id="button">Envoyer le message</button>
+                <button id="button" onclick="startGame()">Envoyer le message</button>
             </div>
         </form>   
     </main>

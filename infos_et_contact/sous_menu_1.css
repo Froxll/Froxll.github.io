@@ -37,7 +37,7 @@ form .corps-formulaire {
 
 form .corps-formulaire .groupe {
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 
@@ -79,7 +79,7 @@ textarea {
 }
 
 button {
-    margin-top: 10px;
+    
     background-color: #9D4EDD;
     color: white;
     font-size: 15px;
@@ -99,4 +99,10 @@ button:hover {
     form .corps-formulaire .droite {
         margin-left: 0px;
     }
+}
+
+#survol_email,#survol_commentaire,#survol_prenom{
+    display: block;
+    color: red;
+    font-size: 0.9em;
 }
