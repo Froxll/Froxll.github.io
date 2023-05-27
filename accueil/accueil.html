@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="accueil.css">
     <link rel="icon" href="/images/LabISEN.png" type="images/png">
 
-    <script src="accueil.js"></script>
+    <script src="../styles.js" defer></script>
+    <script src="accueil.js" defer></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
@@ -22,7 +23,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <div class="nav-links">
                 <ul>
@@ -30,7 +31,7 @@
                         <img src="../images/LabISEN.png" alt="Image Not Found"  class="logo_labisen" weight="120px" height="60">
                     </a>
                     <li>
-                        <a href="accueil.html">
+                        <a href="accueil.html" onclick="showLoader()">
                             <i class="material-symbols-outlined">home</i> Accueil
                         </a>
                     </li>
@@ -40,30 +41,30 @@
                         </a>
                         <ul class="sous_recherche">
                             <li>
-                                <a href="../recherche/sous_menu_recherche1.html" target="_blank">Thématiques de recherche</a>
+                                <a href="../recherche/sous_menu_recherche1.html" target="_blank" id="thematiques">Thématiques de recherche</a>
                             </li>
                             <li>
-                                <a href="../recherche/sous_menu_recherche2.html" target="_blank">Plateformes technologiques</a>
+                                <a href="../recherche/sous_menu_recherche2.html" target="_blank" id="plateformes">Plateformes technologiques</a>
                             </li>   
                         </ul>
                     </li>
                     <li id="test">
-                        <a href="../membres/membres.html">
+                        <a href="../membres/membres.html" id="membres">
                             <i class="material-symbols-outlined">groups</i>  Membres
                         </a>
                     </li>
                     <li>
-                        <a href="../projets/projets.html">
+                        <a href="../projets/projets.html" id="projets">
                             <i class="material-symbols-outlined">science</i> Projets
                         </a>
                     </li>
                     <li>
-                        <a href="../publications/publications.html">
+                        <a href="../publications/publications.html" id="publications">
                             <i class="material-symbols-outlined">description</i> Publications
                         </a>
                     </li>
                     <li>
-                        <a href="../partenaires/partenaires.html">
+                        <a href="../partenaires/partenaires.html" id="partenaires">
                             <i class="material-symbols-outlined">handshake</i> Partenaires
                         </a>
                     </li>
@@ -73,13 +74,13 @@
                         </a>
                         <ul class="sous_info">
                             <li>
-                                <a href="../infos_et_contact/sous_menu_1.html" target="_blank">Contactez-nous</a>
+                                <a href="../infos_et_contact/sous_menu_1.html" target="_blank" id="contactez">Contactez-nous</a>
                             </li>
                             <li>
-                                <a href="../infos_et_contact/sous_menu_2.html" target="_blank">Plan d'accès</a>
+                                <a href="../infos_et_contact/sous_menu_2.html" target="_blank" id="plans">Plan d'accès</a>
                             </li>
                             <li>
-                                <a href="../infos_et_contact/sous_menu_3.html" target="_blank">Offres d'emploi</a>
+                                <a href="../infos_et_contact/sous_menu_3.html" target="_blank" id="offres">Offres d'emploi</a>
                             </li>     
                         </ul>
                     </li>
@@ -91,7 +92,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         
         <br>
 
@@ -215,7 +216,11 @@
 
     </main>
 
-    <footer>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <footer id="footer">
         <p>
             33 Q Avenue du Champ de Manœuvre, 44470 Carquefou <br>
             02 30 13 05 60
