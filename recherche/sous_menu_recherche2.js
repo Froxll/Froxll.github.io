@@ -42,6 +42,26 @@ function inf10(time) {
     return time;
 }
 
+function openModal() {
+    let modal = document.getElementById("Modal");
+    modal.style.display = "block";
+}
+  
+function closeModal() {
+    let modal = document.getElementById("Modal");
+    modal.style.display = "none";
+}
+
+
+function openModal2() {
+    let modal = document.getElementById("Modal2");
+    modal.style.display = "block";
+}
+  
+function closeModal2() {
+    let modal = document.getElementById("Modal2");
+    modal.style.display = "none";
+}
 
 window.onload = () => {
     main();
