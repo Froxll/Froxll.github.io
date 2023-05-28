@@ -210,13 +210,13 @@ footer p{
     }
 }
 
+
 main,header,footer{
-    display: block;
+    visibility: visible;
 }
 
 #loader,#preloader{
-    background-color: white;
-    display: none;
+    visibility: hidden;
 }
 
 #preloader {

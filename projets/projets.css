@@ -110,3 +110,10 @@ html{
 #pictures_drone_2,#pictures_submarine_2,#pictures_seas_2,#pictures_castel_2{
     display: none;
 }
+
+#clock, #chrono{
+    font-size: 1.2em;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+}

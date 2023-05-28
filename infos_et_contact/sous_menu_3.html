@@ -15,6 +15,7 @@
     <link rel="icon" href="/images/LabISEN.png" type="images/png">
 
     <script src="../styles.js" defer></script>
+    <script src="sous_menu_3.js" defer></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
@@ -22,7 +23,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <div class="nav-links">
                 <ul>
@@ -79,18 +80,19 @@
                                 <a href="../infos_et_contact/sous_menu_2.html" target="_blank">Plan d'accès</a>
                             </li>
                             <li>
-                                <a href="../infos_et_contact/sous_menu_3.html" target="_blank">Offres d'emploi</a>
+                                <a href="../infos_et_contact/sous_menu_3.html" target="_blank" id="offres">Offres d'emploi</a>
                             </li>     
                         </ul>
                     </li>
-
+                    <div id="clock"></div>
+                    <div id="chrono"></div>
                 </ul>
             </div>
             <img src="../images/menu_burger.png" alt="Error While Loading Image" class="menu-hamburger">
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <h1>
             Offres d'emploi :
         </h1>
@@ -111,67 +113,73 @@
         <br>
         <br>
 
-        <div class="fil_actualite">
+        <div id="degage">
+            <div class="fil_actualite">
 
-            <div class="cartes">
-                <div class="carte">
-                    <div class="avant">
-                        <h2>
-                            Offres de post-docs
-                        </h2>
-                    </div>
-                    <div class="arriere">
-                        <h3>
-                            o Postdoc avec l'entreprise ACOME
-                            <br>
-                            o Post-doctoral position (24 months) on Artificial Intelligence (AI) (OFFRE POURVUE)
-                            <br>
-                            <a href="../images/PostDoc_Acome.pdf">
-                                <i class="fa-solid fa-file-pdf"></i>
-                            </a>
-                        </h3>
+                <div class="cartes">
+                    <div class="carte">
+                        <div class="avant">
+                            <h2>
+                                Offres de post-docs
+                            </h2>
+                        </div>
+                        <div class="arriere">
+                            <h3>
+                                o Postdoc avec l'entreprise ACOME
+                                <br>
+                                o Post-doctoral position (24 months) on Artificial Intelligence (AI) (OFFRE POURVUE)
+                                <br>
+                                <a href="../images/PostDoc_Acome.pdf">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </a>
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cartes">
-                <div class="carte">
-                    <div class="avant">
-                        <h2>
-                            Offres de thèses 
-                        </h2>
-                    </div>
-                    <div class="arriere">
-                        <h3>
-                            o Thèse CIFRE avec l'entreprise KARDHAM
-                            <br>
-                            <a href="../images/PostDoc_Kardham.pdf">
-                                <i class="fa-solid fa-file-pdf"></i>
-                            </a>
-                        </h3>
+                <div class="cartes">
+                    <div class="carte">
+                        <div class="avant">
+                            <h2>
+                                Offres de thèses 
+                            </h2>
+                        </div>
+                        <div class="arriere">
+                            <h3>
+                                o Thèse CIFRE avec l'entreprise KARDHAM
+                                <br>
+                                <a href="../images/PostDoc_Kardham.pdf">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </a>
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cartes">
-                <div class="carte">
-                    <div class="avant">
-                        <h2>
-                            Offres de stages
-                        </h2>
-                    </div>
-                    <div class="arriere">
-                        <h3>
-                            o Aucun poste pour le moment
-                        </h3>
+                <div class="cartes">
+                    <div class="carte">
+                        <div class="avant">
+                            <h2>
+                                Offres de stages
+                            </h2>
+                        </div>
+                        <div class="arriere">
+                            <h3>
+                                o Aucun poste pour le moment
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </main>
 
-    <footer>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <footer id="footer">
         <p>
             33 Q Avenue du Champ de Manœuvre, 44470 Carquefou <br>
             02 30 13 05 60

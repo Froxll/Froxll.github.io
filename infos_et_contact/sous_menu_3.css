@@ -94,3 +94,10 @@ hr{
         font-size: 0.5em;
     }
 }
+
+#clock, #chrono{
+    font-size: 1.2em;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+}
