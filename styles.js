@@ -1,7 +1,16 @@
 function main(){
 
+    let phone = document.getElementById("phone_number");
+    console.log("test")
+    
+    phone.addEventListener("copy", function() {
+        var verif = prompt("Voulez vous vraiment appeler ce numero, si oui réecriver le ci-dessous","06 00 00 00 00");
+        if (phone == verif) {
+            console.log("vous appelez ce numéro : +",phone);
+        }
+    });
+
     document.getElementById("accueil").onclick = showLoader()
-    document.getElementById("membres").onclick = showLoader()
     document.getElementById("projets").onclick = showLoader()
     document.getElementById("publications").onclick = showLoader()
     document.getElementById("partenaires").onclick = showLoader()
@@ -41,4 +50,15 @@ function unshowLoader(){
 
 }
 
-main()
+function navalert() {
+
+    let conf = confirm("Voulez-vous vraiment vous diriger vers la page membre ?");
+
+    if (conf == true){
+        window.location.href = "../membres/membres.html";
+    }
+
+}
+
+
+    main()
