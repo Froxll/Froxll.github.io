@@ -102,10 +102,28 @@
         <hr>
         <br>
 
+        <div id="Modal" class="modal">
+            <div class="modal_content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h1 id="titre">
+                    Chambre connectée (Living Lab) :
+                </h1>
+                <img src="../images/chambre_connectee.jpg" alt="Error while loading image">
+                <p>
+                    Le living Lab est le fruit de collaboration avec l'entreprise de mutuelle santé Malakoff Médéric. 
+                    <br>
+                    <br>
+                    Initialement, ce Living Lab avait pour but de détecter la chute des personnes âgées sans utiliser de capteurs portés (bracelet, 
+                    médaillon...). 
+                </p>
+            </div>
+        </div>
+
+
         <div class="images chambre">
-            <img src="../images/chambre_connectee.jpg" alt="Error while loading image">
+            <img src="../images/chambre_connectee.jpg" alt="erreur de chargement">
             <div class="texte">
-                <h1>
+                <h1 id="titre" onclick="openModal()">
                     Chambre connectée (Living Lab) :
                 </h1>
                 <p>
@@ -149,10 +167,29 @@
         <hr>
         <br>
 
+
+        <div id="Modal2" class="modal">
+            <div class="modal_content">
+                <span class="close" onclick="closeModal2()">&times;</span>
+                <h1 id="titre">
+                    Environnements hybrides connectées :
+                </h1>
+                <img src="../images/environnement_connecte.jpg" alt="erreur de chargement de l'image">
+                <p>
+                    Cette plateforme est en cours de développement et vise à offrir des services à la personne dans des environnements indoor 
+                    (bureau connecté, école connectée, usine connectée, ...). 
+                </p>
+            </div>
+        </div>
+            </div>
+        </div>
+
+
+
         <div class="images environnement">
             <img src="../images/environnement_connecte.jpg" alt="Error while loading image">
             <div class="texte">
-                <h1>
+                <h1 id="titre" id="titre" onclick="openModal2()">
                     Environnements hybrides connectées :
                 </h1>
                 <p>
