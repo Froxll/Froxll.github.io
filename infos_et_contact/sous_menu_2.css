@@ -222,3 +222,10 @@ hr{
     margin: 0;
   }
 }
+
+#clock, #chrono{
+  font-size: 1.2em;
+  color: white;
+  margin-top: 25px;
+  margin-left: 25px;
+}
