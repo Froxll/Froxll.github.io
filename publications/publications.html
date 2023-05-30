@@ -97,10 +97,30 @@
         <br>
         
         <h1>Voici les 5 dernières publications :</h1>
+
+        <br>
+        
+        <div id="recherche">
+            <span>Rechercher un auteur :</span>
+            <input type="text" id="commentary" oninput="FiltreName()">
+            <span>Rechercher un titre :</span>
+            <input type="text" id="commentaryTitle" oninput="FiltreTitle()">
+            <input type="date" id="start" name="trip-start" value="2023-05-30" min="2018-01-01" max="2025-12-31" oninput="filtreDate()">
+
+                <input type="radio" id="articles" name="publication" value="articles" oninput="filtreRevue()">
+                <label for="huey">Articles</label>
+              
+                <input type="radio" id="revues" name="publication" value="revues" oninput="filtreRevue()">
+                <label for="dewey">Revues</label>
+              
+                <input type="radio" id="toutes" name="publication" value="toutes" checked="checked" oninput="filtreRevue()">
+                <label for="louie">Toutes</label>
+
+        <br>
       
         <div class="publication">
 
-            <div class = carre>
+            <div class = carre id="Puma_Sander_Saumard_Barbet_Latouche">
                 <div class="article"></div>
 
                 <p>
@@ -116,7 +136,7 @@
 
             <br>
 
-            <div class = carre>
+            <div class = carre id="Karine_Napoléon_Jridi">
                 <div class="revue"></div>
 
                 <p>
@@ -132,7 +152,7 @@
 
             <br>
 
-            <div class = carre>
+            <div class = carre id="Bourbia_Karina_Chetouani_Hassouni_Jridi">
                 <div class="revue"></div>
 
                 <p>
@@ -149,7 +169,7 @@
 
             <br>
 
-            <div class = carre>
+            <div class = carre id="Karine_Jridi_Adde_Demousselle">
                 <div class="article"></div>
 
                 <p>
@@ -165,7 +185,7 @@
 
             <br>
 
-            <div class = carre>
+            <div class = "carre" id="Lefebvre_Jridi">
                 <div class="article"></div>
 
                 <p>

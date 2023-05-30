@@ -78,3 +78,12 @@ h1{
     margin-top: 25px;
     margin-left: 25px;
 }
+
+#recherche{
+    text-align: center;
+    color: black;
+}
+
+#Lefebvre_Jridi,#Puma_Sander_Saumard_Barbet_Latouche,#Karine_Napoléon_Jridi,#Bourbia_Karina_Chetouani_Hassouni_Jridi,#Karine_Jridi_Adde_Demousselle{
+    display: flex;
+}
