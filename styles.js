@@ -60,5 +60,13 @@ function navalert() {
 
 }
 
+function MessageCopy() {
+    document.addEventListener('copy', function(event) {
+      event.preventDefault();
+      console.log("Copiez pas svp");
+    });
+  }
+  
+  MessageCopy();
 
-    main()
+main()
