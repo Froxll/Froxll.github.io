@@ -1,7 +1,6 @@
 function main(){
 
     let phone = document.getElementById("phone_number");
-    console.log("test")
     
     phone.addEventListener("copy", function() {
         var verif = prompt("Voulez vous vraiment appeler ce numero, si oui réecriver le ci-dessous","06 00 00 00 00");
@@ -24,8 +23,6 @@ function main(){
 
 function showLoader(){
 
-    console.log("TEST SHOWLOADER")
-
     document.getElementById("header").style.visibility = "hidden"
     document.getElementById("main").style.visibility = "hidden"
     document.getElementById("footer").style.visibility = "hidden"
@@ -38,8 +35,6 @@ function showLoader(){
 }
 
 function unshowLoader(){
-
-    console.log("TEST UNSHOWLOADER")
 
     document.getElementById("header").style.visibility = "visible"
     document.getElementById("main").style.visibility = "visible"
