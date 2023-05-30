@@ -175,3 +175,26 @@ main img{
     margin-top: 25px;
     margin-left: 25px;
 }
+
+#bouton_ajout2{
+
+    display: none;
+
+}
+
+ 
+
+#cacher, #cacher2 {
+
+    display: none;
+
+}
+
+#mode_edition {
+    background-color: red;
+    border-radius: 3px;
+    margin-left: 90%;
+    margin-top: 1%;
+    padding: 5px;
+    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+}
