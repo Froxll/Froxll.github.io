@@ -1,13 +1,19 @@
 function main(){
 
     let phone = document.getElementById("phone_number");
-    
-    phone.addEventListener("copy", function() {
+
+    document.getElementById("phone_number").addEventListener('copy', function(event) {
         var verif = prompt("Voulez vous vraiment appeler ce numero, si oui réecriver le ci-dessous","06 00 00 00 00");
-        if (phone == verif) {
-            console.log("vous appelez ce numéro : +",phone);
+    
+        if (verif == "02 30 13 05 60") {
+            console.log("vous appelez ce numéro : +",verif);
+            sonnerie(5000); 
+
         }
-    });
+        else {
+            console.log("Vous avez composé le mauvais numéro");
+        }
+      });
 
     document.getElementById("accueil").onclick = showLoader()
     document.getElementById("projets").onclick = showLoader()
@@ -54,6 +60,19 @@ function navalert() {
     }
 
 }
+
+function sonnerie(duree){
+    var audio = new Audio("../musique/Sonnerie Skype.mp3");
+    
+    // Jouer la sonnerie
+    audio.play();
+    
+    // Arrêter la sonnerie après la durée spécifiée
+    setTimeout(function() {
+      audio.pause();
+      audio.currentTime = 0;
+    }, duree);
+  }
 
 function MessageCopy() {
     document.addEventListener('copy', function(event) {
