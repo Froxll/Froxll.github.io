@@ -83,7 +83,7 @@ function WhoAreWe(){
     },2000)
 
     setTimeout(function() {
-        document.getElementById("WhoAreWe").style.marginLeft = "89vw"
+        document.getElementById("WhoAreWe").style.marginLeft = "85vw"
     },3000)
 
     setTimeout(function() {

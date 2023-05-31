@@ -71,7 +71,7 @@ function editionmode (){
 
         if (nomsaisit == nomreponse){
 
-            var mdpsaisit = prompt ("Entrez le mot de passe", "pasword");
+            var mdpsaisit = prompt ("Entrez le mot de passe", "password");
 
  
 
@@ -89,7 +89,7 @@ function editionmode (){
 
                 // alert pour prevenir le changement de mode et changement de couleur du boutton mode eddition
 
-                alert("mode admin activer");
+                alert("Mode admin activé");
 
  
 
@@ -119,7 +119,7 @@ function editionmode (){
 
             else {
 
-                alert("mot de passe incorect");
+                alert("Mot de passe incorrect");
 
             }
 
@@ -129,7 +129,7 @@ function editionmode (){
 
         else {
 
-            alert("nom d'utilisateur incorect");
+            alert("Nom d'utilisateur incorrect");
 
         }
 
@@ -141,7 +141,7 @@ function editionmode (){
 
     else {
 
-        let conf = confirm("Etes vous sur de vouloir quitter le mode edition");
+        let conf = confirm("Êtes vous sûr de vouloir quitter le mode édition ?");
 
  
 
@@ -174,7 +174,7 @@ function editionmode (){
 function nom_modif() {
     if (counter%2 == 0){
         //message d'erreur
-        console.log("activez le mode eddition");
+        console.log("Veuillez activer le mode édition");
     }
     else {
          // prend l'ellement a changer, ici le nom 
@@ -195,7 +195,7 @@ function nom_modif() {
 
 function nom_modif2() {
     if (counter%2 == 0){
-        console.log("activez le mode eddition");
+        console.log("Veuillez activer le mode édition");
     }
     else {
          // prend l'ellement a changer, ici le nom 
@@ -216,7 +216,7 @@ function nom_modif2() {
 
 function nom_modif3() {
     if (counter%2 == 0){
-        console.log("activez le mode eddition");
+        console.log("Veuillez activer le mode édition");
     }
     else {
          // prend l'ellement a changer, ici le nom 
@@ -239,7 +239,7 @@ function nom_modif3() {
 
 function nom_modif4() {
     if (counter%2 == 0){
-        console.log("activez le mode eddition");
+        console.log("Veuillez activer le mode édition");
     }
     else {
         // prend l'ellement a changer, ici le nom 

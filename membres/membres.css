@@ -79,7 +79,7 @@ main img{
     color: white;
 }
 
-.ayoub_karine:hover > .icone, .maher_jridi:hover > .icone{
+.ayoub_karine:hover > .icone, .maher_jridi:hover > .icone, .nathan_gadbin:hover > .icone, .romain_allano:hover > .icone{
     color:#9D4EDD;
 }
 
@@ -190,11 +190,13 @@ main img{
 
 }
 
-#mode_edition {
-    background-color: red;
-    border-radius: 3px;
+#mode_edition,#bouton_ajout2 {
+    background-color:#9D4EDD;
+    border-radius: 15px;
+    color:white;
+    border-color: transparent;
     margin-left: 90%;
     margin-top: 1%;
     padding: 5px;
-    box-shadow: 0 10px 20px grey, 0 6px 6px white;
+    
 }
