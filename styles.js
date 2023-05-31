@@ -22,7 +22,7 @@ function main(){
     document.getElementById("thematiques").onclick = showLoader()
     document.getElementById("plateformes").onclick = showLoader()
     document.getElementById("contactez").onclick = showLoader()
-    document.getElementById("plan").onclick = showLoader()
+    document.getElementById("plans").onclick = showLoader()
     document.getElementById("offres").onclick = showLoader()
     
 }
