@@ -200,3 +200,7 @@ main img{
     padding: 5px;
     
 }
+
+#img_ayoubKarin{
+    filter: blur(4px);
+}

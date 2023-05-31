@@ -170,6 +170,10 @@ function editionmode (){
     }
 }
 
+function grattage(){
+    document.getElementById("img_ayoubKarin").style.filter = "none"
+}
+
 
 function nom_modif() {
     if (counter%2 == 0){
