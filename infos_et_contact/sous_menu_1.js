@@ -46,11 +46,9 @@ function inf10(time) {
 
 function disableButton(){
 
-    console.log("test")
     document.getElementById("button").disabled = true
     
     if(checkCommentary() == true && checkName() == true && checkMail() == true){
-        console.log("DSOIJFHSIDPJFDSOLF")
         document.getElementById("header").style.display = "none"
         document.getElementById("main").style.display = "none"
         document.getElementById("footer").style.display = "none"
@@ -107,19 +105,22 @@ function checkCommentary(){
 function errorMessage(){
 
     if(checkName() == true){
-        document.getElementById("survol_prenom").style.display = "none"
+        document.getElementById("survol_prenom").innerHTML ="Le nom est bon"
+        document.getElementById("survol_prenom").style.color = "green"
     }
     if(checkName() == false){
         document.getElementById("survol_prenom").style.display = "block"
     }
     if(checkMail() == true){
-        document.getElementById("survol_email").style.display = "none"
+        document.getElementById("survol_email").innerHTML = "Le mail est bon"
+        document.getElementById("survol_email").style.color = "green"
     }
     if(checkMail() == false){
         document.getElementById("survol_email").style.display = "block"
     }
     if(checkCommentary() == true){
-        document.getElementById("survol_commentaire").style.display = "none"
+        document.getElementById("survol_commentaire").innerHTML = "Le commentaire est bon"
+        document.getElementById("survol_commentaire").style.color = "green"
     }
     if(checkCommentary() == false){
         document.getElementById("survol_commentaire").style.display = "block"
@@ -281,14 +282,7 @@ Array.prototype.last = function () {
   
   resetGame();
   
-  // If space was pressed restart the game
-  window.addEventListener("keydown", function (event) {
-    if (event.key == " ") {
-      event.preventDefault();
-      resetGame();
-      return;
-    }
-  });
+
   
   window.addEventListener("mousedown", function (event) {
     if (phase == "waiting") {
@@ -315,6 +309,7 @@ Array.prototype.last = function () {
   
   // The main game loop
   function animate(timestamp) {
+    
     if (!lastTimestamp) {
       lastTimestamp = timestamp;
       window.requestAnimationFrame(animate);
@@ -339,6 +334,9 @@ Array.prototype.last = function () {
             // Increase score
             score += perfectHit ? 2 : 1;
             scoreElement.innerText = score;
+            if(score >= 5){
+                document.location.href="../accueil/accueil.html"
+            }
   
             if (perfectHit) {
               perfectElement.style.opacity = 1;
