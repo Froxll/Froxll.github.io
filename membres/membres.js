@@ -52,121 +52,45 @@ let counter = 0;
 //active le mode edition
 
 function editionmode (){
-
- 
-
     if (counter%2 == 0) {
-
         var nomsaisit = prompt("Entrez le nom du profil","admin");
-
- 
-
         //on initialise une variable qui contient la bonne reponse au prompt nom
-
         var nomreponse = "admin";
-
- 
-
         // on verifie si la valeur entree dans le prompt est la bonne
-
         if (nomsaisit == nomreponse){
-
             var mdpsaisit = prompt ("Entrez le mot de passe", "password");
-
- 
-
             //on initialise une variable qui contient la bonne reponse au prompt mdp
-
             var mdpreponse = "admin_pwd"
-
- 
-
             // on verifie si la valeur entree dans le prompt est la bonne
-
             if ( mdpsaisit == mdpreponse){
-
- 
-
                 // alert pour prevenir le changement de mode et changement de couleur du boutton mode eddition
-
                 alert("Mode admin activé");
-
- 
-
                 counter = counter+1;
-
- 
-
                 var boutton = document.getElementById("mode_edition");
-
                 boutton.style.backgroundColor = "green";
-
- 
-
                 // on fait apparaitre le boutton ajout
-
                 let boutton_ajout = document.getElementById("bouton_ajout2");
-
                 boutton_ajout.style.display = "block";
-
- 
-
-               
-
             }
-
- 
-
             else {
-
                 alert("Mot de passe incorrect");
-
             }
-
         }
-
- 
-
         else {
-
             alert("Nom d'utilisateur incorrect");
-
         }
-
-       
-
     }
-
- 
-
     else {
-
         let conf = confirm("Êtes vous sûr de vouloir quitter le mode édition ?");
-
- 
-
         if (conf == true) {
-
- 
-
             counter = counter+1;
-
             // remet la couleur innitiale du boutton
-
             var bouton = document.getElementById("mode_edition");
-
             bouton.style.backgroundColor = "red";
-
- 
-
             // on refait disparaitre le boutton ajout
-
             let boutton_ajout = document.getElementById("bouton_ajout2");
-
             boutton_ajout.style.display = "none";
-
         }
-
     }
 }
 

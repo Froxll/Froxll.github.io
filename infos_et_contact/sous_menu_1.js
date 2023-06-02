@@ -49,11 +49,7 @@ function disableButton(){
     document.getElementById("button").disabled = true
     
     if(checkCommentary() == true && checkName() == true && checkMail() == true){
-        document.getElementById("header").style.display = "none"
-        document.getElementById("main").style.display = "none"
-        document.getElementById("footer").style.display = "none"
-
-        document.getElementById("Game").style.display = "block"
+      document.getElementById("button").disabled = false
     }
 
 }
@@ -129,7 +125,11 @@ function errorMessage(){
 }
 
 function startGame(){
-    console.log("A compléter")
+  document.getElementById("header").style.display = "none"
+  document.getElementById("main").style.display = "none"
+  document.getElementById("footer").style.display = "none"
+
+  document.getElementById("Game").style.display = "block"
 }
 
 // Tout ce qui suit a bien sûr été côdé par Romain et Nathan (non c'est pas du vol)
