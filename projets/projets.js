@@ -4,7 +4,7 @@ function main(){
 
 }
 
-function goUp(){
+function goUp(){                                    //Cette fonction est appelée au clic sur le bouton
     
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
@@ -16,7 +16,7 @@ let counter_submarine = 0
 let counter_castel = 0
 let counter_seas = 0
 
-function changeImageDrone(){
+function changeImageDrone(){                        //Est appelé au clic sur l'image, affiche une image et enlève l'autre
 
     if(counter_drone%2==0){
         document.getElementById("pictures_drone").style.display = 'none'
@@ -30,7 +30,7 @@ function changeImageDrone(){
 
 }
 
-function changeImageCastel(){
+function changeImageCastel(){                       //Pareil pour toutes les autres fonctions
 
     if(counter_castel%2==0){
         document.getElementById("pictures_castel").style.display = 'none'

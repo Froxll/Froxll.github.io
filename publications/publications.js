@@ -103,7 +103,9 @@ function filtreDate(){
 
 }
 
-function FiltreTitle(){
+function FiltreTitle(){                 //Je n'ai pas trouvé de meilleur manières en javascript pour filtrer les recherches en prenant en compte
+                                        //les erreurs de l'utilisateur, ces fonctions sont un ptit peu longue et ne nécessite pas forcément
+                                        //de commentaires
 
     let recherche = document.getElementById("commentaryTitle").value
     if(recherche == ""){

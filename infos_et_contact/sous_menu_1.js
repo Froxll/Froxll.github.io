@@ -46,9 +46,9 @@ function inf10(time) {
 
 function disableButton(){
 
-    document.getElementById("button").disabled = true
+    document.getElementById("button").disabled = true                               //Le bouton est incliquable de base
     
-    if(checkCommentary() == true && checkName() == true && checkMail() == true){
+    if(checkCommentary() == true && checkName() == true && checkMail() == true){    //Il devient cliquable si toutes les critères sont valides
       document.getElementById("button").disabled = false
     }
 
@@ -56,7 +56,7 @@ function disableButton(){
 
 function checkName(){
 
-    let nb_space = document.getElementById("name").value.split(" ").length          //Ptit bug, "Nathan" est compté comme 2 mots a cause de l'espace
+    let nb_space = document.getElementById("name").value.split(" ").length          //Compte le nombre d'espace
 
     if(nb_space == 2){
         return true
@@ -72,7 +72,7 @@ let nb_point = 0
 
 function checkMail(){
 
-    let nb_arobase = document.getElementById("email").value.split('@').length - 1;
+    let nb_arobase = document.getElementById("email").value.split('@').length - 1;  //Compte le nombre de . et de @
     let nb_point = document.getElementById("email").value.split('.').length - 1;
     
     if(nb_point == 1 && nb_arobase == 1){
@@ -86,7 +86,7 @@ function checkMail(){
 
 function checkCommentary(){
 
-    let nb_char = document.getElementById("commentary").value.length
+    let nb_char = document.getElementById("commentary").value.length              //Compte le nombre de caractère
     
     
     if(nb_char >= 20 && nb_char <= 1000){
@@ -98,7 +98,7 @@ function checkCommentary(){
 
 }
 
-function errorMessage(){
+function errorMessage(){                                          //Met les messages en rouges/verts s'ils sont bons ou pas
 
     if(checkName() == true){
         document.getElementById("survol_prenom").innerHTML ="Le nom est bon"
@@ -124,7 +124,7 @@ function errorMessage(){
 
 }
 
-function startGame(){
+function startGame(){                                               //Au clic sur le bouton, cette fonction est appelée elle affiche le jeu
   document.getElementById("header").style.display = "none"
   document.getElementById("main").style.display = "none"
   document.getElementById("footer").style.display = "none"

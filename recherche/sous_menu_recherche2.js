@@ -42,12 +42,12 @@ function inf10(time) {
     return time;
 }
 
-function openModal() {
+function openModal() {                                  //Cette fonction ouvre le modal au clic
     let modal = document.getElementById("Modal");
     modal.style.display = "block";
 }
   
-function closeModal() {
+function closeModal() {                                 //Cette fonction ferme le modal au clic
     let modal = document.getElementById("Modal");
     modal.style.display = "none";
 }
